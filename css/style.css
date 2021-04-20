@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e3e5eb;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+}
+
+.container-list {
+  background: #f3f5fa;
+  box-shadow: 0px 0px 20px rgba(149, 153, 159, 0.16);
+  border-radius: 10px;
+}
+
+.container-list h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  background: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+}
+
+.list {
+  padding: 40px;
+  width: 100%;
+}
+
+.list .person {
+  background: #fff;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: move;
+  /* transition: 0.2s; */
+}
+
+/* Classes para os estilos nos diferentes estados drag and drop */
+
+.list .person.selected {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px rgba(149, 153, 159, 0.16);
+  background-color: #5173cf;
+}
+
+.list .person.ghost {
+  /* border: 2px dotted; */
+}
+
+.list .person.drag {
+  opacity: 0;
+}
+/*  ------- */
+
+.list .label {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #5173cf;
+}
+
+.list .date {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list .person img {
+  width: 70px;
+  border-radius: 100%;
+  margin-right: 40px;
+}

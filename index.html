@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Listas com Drag and Drop || SortableJS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-list">
+        <h1>Drag and Drop com Javascript</h1>
+
+        <div class="list" id="list">
+          <!-- Persona #1 -->
+          <div class="person" data-id="1">
+            <div class="foto">
+              <img src="img/1.png" alt="" />
+            </div>
+            <div class="name">
+              <div>
+                <p class="label">Name</p>
+                <p class="date">Carlos Arturo</p>
+              </div>
+            </div>
+            <div class="age">
+              <p class="label">Age</p>
+              <p class="date">24</p>
+            </div>
+            <div class="email">
+              <div class="label">Email</div>
+              <p class="date">carlos@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Persona #2 -->
+          <div class="person" data-id="2">
+            <div class="foto">
+              <img src="img/2.png" alt="" />
+            </div>
+            <div class="name">
+              <div>
+                <p class="label">Name</p>
+                <p class="date">Alejandro</p>
+              </div>
+            </div>
+            <div class="age">
+              <p class="label">Age</p>
+              <p class="date">25</p>
+            </div>
+            <div class="email">
+              <div class="label">Email</div>
+              <p class="date">alejandro@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Persona #3 -->
+          <div class="person" data-id="3">
+            <div class="foto">
+              <img src="img/3.png" alt="" />
+            </div>
+            <div class="name">
+              <div>
+                <p class="label">Name</p>
+                <p class="date">Stephanie</p>
+              </div>
+            </div>
+            <div class="age">
+              <p class="label">Age</p>
+              <p class="date">20</p>
+            </div>
+            <div class="email">
+              <div class="label">Email</div>
+              <p class="date">stephanie@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Persona #4 -->
+          <div class="person" data-id="4">
+            <div class="foto">
+              <img src="img/4.png" alt="" />
+            </div>
+            <div class="name">
+              <div>
+                <p class="label">Name</p>
+                <p class="date">Mike</p>
+              </div>
+            </div>
+            <div class="age">
+              <p class="label">Age</p>
+              <p class="date">60</p>
+            </div>
+            <div class="email">
+              <div class="label">Email</div>
+              <p class="date">mike@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
